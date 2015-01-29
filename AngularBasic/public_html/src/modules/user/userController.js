@@ -1,5 +1,5 @@
 (function () {
-	var app = angular.module('userModule', []);
+	var app = angular.module('userModule');
 
 	app.controller('userController', ['$scope', function ($scope) {
 			$scope.user = {};
