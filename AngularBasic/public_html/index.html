@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="userModule">
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+		<script src="src/modules/user/userController.js"></script>
+    </head>
+    <body ng-controller="userController as userCtrl">
+		<div class="container">
+			<h1>AngularJS Básico</h1>
+			<button class="btn btn-default" ng-click="userCtrl.showForm()" >Crear Usuario</button>
+			<user-form ng-show="showForm"></user-form>
+		</div>
+    </body>
+</html>
