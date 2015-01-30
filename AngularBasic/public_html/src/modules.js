@@ -1,5 +1,5 @@
 (function () {
-	var userModule = angular.module('userModule', ['MockModule']);
+	var userModule = angular.module('userModule', ['MockModule','CrudModule']);
 
 	userModule.constant('myConfig', {
 		host: "localhost",
