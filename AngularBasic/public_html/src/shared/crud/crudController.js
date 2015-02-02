@@ -9,7 +9,7 @@
 			this.fetchRecords = function () {
 				APIClient.query(function (data) {
 					self.records = data.records;
-					console.log(data)
+					console.log(data);
 					$scope.currentRecord = {};
 					self.editMode = false;
 				});
