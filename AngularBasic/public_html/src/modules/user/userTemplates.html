@@ -1,12 +1,12 @@
-<div class='container'>
-	<form role='form' name='userForm' ng-submit="userForm.$valid && userCtrl.save()">
+<div class='container' ng-controller="CRUDController as ctrl">
+	<form role='form' name='userForm' ng-submit="userForm.$valid && ctrl.saveRecord()">
 		<div class='form-group' >
 			<label for='firstName'>Nombres</label>
-			<input type='text' class='form-control' id='firstName' placeholder='Enter value' ng-model="user.firstName" required/>
+			<input type='text' class='form-control' id='firstName' placeholder='Enter value' ng-model="currentRecord.firstName" required/>
 		</div>
 		<div class='form-group' >
 			<label for='lastName'>Apellidos</label>
-			<input type='text' class='form-control' id='lastName' placeholder='Enter value' ng-model="user.lastName" required/>
+			<input type='text' class='form-control' id='lastName' placeholder='Enter value' ng-model="currentRecord.lastName" required/>
 		</div>
 		<input type="submit" value="Guardar" class='btn btn-primary'/>
 		<input type="reset" value="Cancelar" class='btn btn-default'/>
